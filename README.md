@@ -19,13 +19,13 @@ Project Task: Week 1
 
 Exploratory Data Analysis:
 
-Each sample has 32 features ranging from -1,0,1. Explore the data using histogram, heatmaps. 
+		Each sample has 32 features ranging from -1,0,1. Explore the data using histogram, heatmaps. 
 
-Determine the number of samples present in the data, unique elements in all the features. 
+		Determine the number of samples present in the data, unique elements in all the features. 
 
-Check if there is any null value in any features. 
+		Check if there is any null value in any features. 
 
-Correlation of features and feature selection:
+		Correlation of features and feature selection:
 
 Next, we have to find if there are any correlated features present in the data. Remove the feature which might be correlated with some threshold.
 
@@ -35,12 +35,12 @@ Project Task: Week 2
 
 Building Classification Model
 
-Finally, build a robust classification system that classifies whether the URL sample is a phishing site or not.
+		Finally, build a robust classification system that classifies whether the URL sample is a phishing site or not.
 
-Build classification models using a binary classifier to detect malicious or phishing URLs.
+		Build classification models using a binary classifier to detect malicious or phishing URLs.
 
-Illustrate the diagnostic ability of this binary classifier by plotting the ROC curve.
+		Illustrate the diagnostic ability of this binary classifier by plotting the ROC curve.
 
-Validate the accuracy of data by the K-Fold cross-validation technique.
+		Validate the accuracy of data by the K-Fold cross-validation technique.
 
 The final output consists of the model, which will give maximum accuracy on the validation dataset with selected attributes.
