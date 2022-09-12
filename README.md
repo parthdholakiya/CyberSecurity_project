@@ -62,5 +62,5 @@ Implemented ML Algorithms for binary classification
 ### K-Fold cross-validation
 
 ### mean accuracy of xgb_hyper model is :  0.97
-### varaince : 0.03
+### variance  : 0.03
 
