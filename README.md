@@ -16,36 +16,53 @@ The input dataset contains an 11k sample corresponding to the 11k URL. Each samp
 
  1: Legitimate
 
-The sample could be either legitimate or phishing.
+![image](https://user-images.githubusercontent.com/94167271/189637556-8cff5731-c127-4f7c-ba31-7034c2b3d237.png)
 
- 
+Found Favicol and PopUpwindow has Multicollinearity
 
-Project Task: Week 1
+multicollinearity and why it is a problem?
 
-Exploratory Data Analysis:
+Multicollinearity exists whenever an independent variable is highly correlated with one or more of the other independent variables in a multiple regression equation. Multicollinearity is a problem because it undermines the statistical significance of an independent variable
 
-		Each sample has 32 features ranging from -1,0,1. Explore the data using histogram, heatmaps. 
+### From chi-square test  found, popUpWidnow and Favicon has Multicollinearity
 
-		Determine the number of samples present in the data, unique elements in all the features. 
+Ho: popUpWidnow is independent of Favicon
+ha: popUpWidnow is Favicon dependent -> Multicollinearity
 
-		Check if there is any null value in any features. 
+p_value of chi-square test is : 0.0
+---------------------------------------------------------
+Reject Ho, popUpWidnow is Favicon dependent -> Multicollinearity
 
-		Correlation of features and feature selection:
+PCA (Principal Component Analysis) takes advantage of multicollinearity and combines the highly correlated variables into a set of uncorrelated variables. Therefore, PCA can effectively eliminate multicollinearity between features.
 
-Next, we have to find if there are any correlated features present in the data. Remove the feature which might be correlated with some threshold.
+### Applied PCA to solve multicollinearity
 
- 
+Here 1=55% and 0=44% found slightly unbalance data so use SMOTE for data balance.
 
-Project Task: Week 2
+After attempting SMOTE on train data.
 
-Building Classification Model
+![image](https://user-images.githubusercontent.com/94167271/189640166-616133a7-a18f-4369-8bfe-e2c797984fe1.png)
 
-		Finally, build a robust classification system that classifies whether the URL sample is a phishing site or not.
+Implemented ML Algorithms for binary classification
 
-		Build classification models using a binary classifier to detect malicious or phishing URLs.
+   LogisticRegression
 
-		Illustrate the diagnostic ability of this binary classifier by plotting the ROC curve.
+   DecisionTreeClassifier
 
-		Validate the accuracy of data by the K-Fold cross-validation technique.
+   RandomForestClassifier
 
-The final output consists of the model, which will give maximum accuracy on the validation dataset with selected attributes.
+   XGBClassifier
+
+   AdaBoostClassifier
+
+### XGBClassifier gives Highest recall on Test data.
+### after implementing Hyperparameter tuning on Xgboost using GridSearchCV recall reach up to 97 %.
+
+### AUC on test data
+![image](https://user-images.githubusercontent.com/94167271/189651768-58055b7d-5eb6-4eb3-8b3d-65cdb43c89c4.png)
+
+### K-Fold cross-validation
+
+### mean accuracy of xgb_hyper model is :  0.97
+### varaince : 0.03
+
