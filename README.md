@@ -24,8 +24,8 @@ Multicollinearity exists whenever an independent variable is highly correlated w
 
 ### From chi-square test  found, popUpWidnow and Favicon has Multicollinearity
 
-Ho: popUpWidnow is independent of Favicon
-ha: popUpWidnow is Favicon dependent -> Multicollinearity
+             Ho: popUpWidnow is independent of Favicon
+             ha: popUpWidnow is Favicon dependent -> Multicollinearity
 
 p_value of chi-square test is : 0.0
 ---------------------------------------------------------
