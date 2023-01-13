@@ -43,15 +43,15 @@ After attempting SMOTE on train data.
 
 Implemented ML Algorithms for binary classification
 
-   LogisticRegression
+        LogisticRegression
 
-   DecisionTreeClassifier
+        DecisionTreeClassifier
 
-   RandomForestClassifier
+        RandomForestClassifier
 
-   XGBClassifier
+        XGBClassifier
 
-   AdaBoostClassifier
+        AdaBoostClassifier
 
 ### XGBClassifier gives Highest recall on Test data.
 ### after implementing Hyperparameter tuning on Xgboost using GridSearchCV recall reach up to 97 %.
