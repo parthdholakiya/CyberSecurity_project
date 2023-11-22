@@ -69,8 +69,4 @@ In conclusion, this cybersecurity project employs a comprehensive approach, comb
 
 Feel free to explore the code and contribute to the exciting field of cybersecurity.
 
-# CyberSecurity_project
-
-![image](https://user-images.githubusercontent.com/94167271/234273272-bc0a0b68-c079-4d9d-a684-085b5c258a0a.png)
-
 
